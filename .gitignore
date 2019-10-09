@@ -1,41 +1,142 @@
-# Compiled Lua sources
-luac.out
+local TextLabel = Instance.new("TextLabel")
+local ScreenGui = Instance.new("ScreenGui")
+local Mainfra = Instance.new("Frame")
+local leav = Instance.new("TextButton")
+local r2 = Instance.new("TextButton")
+local infin = Instance.new("TextButton")
+local Repeat1 = Instance.new("TextButton")
+local TextLabel_2 = Instance.new("TextLabel")
 
-# luarocks build files
-*.src.rock
-*.zip
-*.tar.gz
 
-# Object files
-*.o
-*.os
-*.ko
-*.obj
-*.elf
+TextLabel_2.Parent = Mainfra
+TextLabel_2.BackgroundColor3 = Color3.new(1, 1, 1)
+TextLabel_2.BackgroundTransparency = 1
+TextLabel_2.Position = UDim2.new(0.184952974, 0, 0.144927531, 0)
+TextLabel_2.Size = UDim2.new(0, 200, 0, 50)
+TextLabel_2.Font = Enum.Font.Antique
+TextLabel_2.Text = "Boulevard edition"
+TextLabel_2.TextColor3 = Color3.new(0, 0, 0)
+TextLabel_2.TextSize = 40
 
-# Precompiled Headers
-*.gch
-*.pch
 
-# Libraries
-*.lib
-*.a
-*.la
-*.lo
-*.def
-*.exp
+TextLabel.Parent = Mainfra
+TextLabel.BackgroundColor3 = Color3.new(1, 1, 1)
+TextLabel.BackgroundTransparency = 1
+TextLabel.BorderSizePixel = 2
+TextLabel.Position = UDim2.new(0.184952974, 0, 0, 0)
+TextLabel.Size = UDim2.new(0, 200, 0, 50)
+TextLabel.Font = Enum.Font.Antique
+TextLabel.Text = "Perfection GUI"
+TextLabel.TextColor3 = Color3.new(0, 0, 0)
+TextLabel.TextSize = 60
 
-# Shared objects (inc. Windows DLLs)
-*.dll
-*.so
-*.so.*
-*.dylib
 
-# Executables
-*.exe
-*.out
-*.app
-*.i*86
-*.x86_64
-*.hex
 
+
+
+--Properties:
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+
+
+leav.Name = "leav"
+leav.Parent = Mainfra
+leav.BackgroundColor3 = Color3.new(1, 1, 1)
+leav.Position = UDim2.new(0.0311932974, 0, 0.5826087, 0)
+leav.Size = UDim2.new(0, 147, 0, 50)
+leav.Style = Enum.ButtonStyle.RobloxRoundButton
+leav.Font = Enum.Font.Antique
+leav.Text = "Panic Leave"
+leav.TextColor3 = Color3.new(0, 0, 0)
+leav.TextSize = 40
+leav.MouseButton1Down:connect(function()
+game.Players.markus15552:kick()
+end)
+
+
+
+
+r2.Name = "r2"
+r2.Parent = Mainfra
+r2.BackgroundColor3 = Color3.new(1, 1, 1)
+r2.Position = UDim2.new(0.516447365, 0, 0.310144931, 0)
+r2.Size = UDim2.new(0, 147, 0, 50)
+r2.Style = Enum.ButtonStyle.RobloxRoundButton
+r2.Font = Enum.Font.Antique
+r2.Text = "Repeat 10"
+r2.TextColor3 = Color3.new(0, 0, 0)
+r2.TextSize = 40
+r2.MouseButton1Down:connect(function()
+for i = 1, 10 do
+
+game:service'Players'.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-3.00027895, 176.566336, 275.17569)
+
+wait(1)
+	
+game:service'Players'.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-12.1041489, 175.0088591, 350.0020874)
+wait(0.1)
+game:service'Players'.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-15.66560185, 175.0088591, 334.797729)
+wait(0.1)
+game:service'Players'.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(7.15406611, 175.0088591, 349.21109)
+wait(0.1)
+game:service'Players'.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(3.33952308, 175.0088591, 334.784576)
+wait(0.1)
+game:service'Players'.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-3.00027895, 176.566336, 275.17569)
+
+wait(2)
+
+end
+end)
+
+infin.Name = "infin"
+infin.Parent = Mainfra
+infin.BackgroundColor3 = Color3.new(1, 1, 1)
+infin.Position = UDim2.new(0.516447365, 0, 0.5826087, 0)
+infin.Size = UDim2.new(0, 147, 0, 50)
+infin.Style = Enum.ButtonStyle.RobloxRoundButton
+infin.Font = Enum.Font.Antique
+infin.Text = "IY"
+infin.TextColor3 = Color3.new(0, 0, 0)
+infin.TextSize = 60
+infin.MouseButton1Down:connect(function()
+loadstring(game:HttpGet('https://pastebin.com/raw/tzTXmYf2', true))()
+end)
+
+Repeat1.Name = "Repeat 1"
+Repeat1.Parent = Mainfra
+Repeat1.BackgroundColor3 = Color3.new(1, 1, 1)
+Repeat1.Position = UDim2.new(0.033878129, 0, 0.31072998, 0)
+Repeat1.Size = UDim2.new(0, 147, 0, 50)
+Repeat1.Style = Enum.ButtonStyle.RobloxRoundButton
+Repeat1.Font = Enum.Font.Antique
+Repeat1.Text = "tp store"
+Repeat1.TextColor3 = Color3.new(0, 0, 0)
+Repeat1.TextSize = 45
+Repeat1.MouseButton1Down:connect(function()
+
+game:service'Players'.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-3.00027895, 176.566336, 275.17569)
+
+end)
+
+
+Mainfra.Name = "Main fra"
+Mainfra.Parent = ScreenGui
+Mainfra.BackgroundColor3 = Color3.new(0.192157, 0.192157, 0.192157)
+Mainfra.BackgroundTransparency = 0.25
+Mainfra.BorderSizePixel = 4
+Mainfra.Position = UDim2.new(0.734423697, 0, 0.33281973, 0)
+Mainfra.Size = UDim2.new(0, 319, 0, 345)
+Mainfra.Draggable = true
+ 
+function zigzag(X) return math.acos(math.cos(X*math.pi))/math.pi
+ 
+end
+ 
+counter = 0
+ 
+while wait()do
+ Mainfra.BorderColor3 = Color3.fromHSV(zigzag(counter),1,1)
+ 
+ counter = counter + 0.001
+end
